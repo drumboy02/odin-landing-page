@@ -57,7 +57,7 @@ header {
 .information-div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 .information-text {
@@ -69,7 +69,9 @@ header {
 
 .img-box-div {
     display: flex;
-    gap: 32px;
+    justify-content: center;
+    gap: 50px;
+    
 }
 
 .img-box {
@@ -77,6 +79,67 @@ header {
     border-radius: 10%;
     height: 125px;
     width: 125px;
+}
+
+.img-col1, .img-col2, .img-col3, .img-col4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-subtext {
+    width: 125px;
+    text-align: center;
+}
+
+.quote-section {
+    background: #e5e7eb;
+}
+
+.quote-text {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote-citation {
+    text-align: right;
+    font-weight: 900;
+}
+
+.call-to-action {
+    background: #3882f6;
+    color: #e5e7eb;
+    margin: 75px;
+    padding: 40px;
+    border-radius: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cta-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-right {
+
+}
+
+.cta-header {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.cta-text {
+
+}
+
+.cta-btn {
+    background: #3882f6;
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    border-radius: 6%;
 }
 
 footer {

@@ -1,7 +1,9 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header, footer{
@@ -10,7 +12,11 @@ header, footer{
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12px;
+    padding-left: 88px;
+    padding-right: 88px;
 }
 
 .header-logo {
@@ -22,18 +28,21 @@ header {
     color: #e5e7eb;
     font-size: 18px;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
 }
 
 .hero-div {
     background: #1f2937;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 96px;
 }
 
 .hero-left {
     width: 420px;
-    margin-right: 16px;
+    margin-right: 32px;
+    flex-shrink: 0;
 }
 
 .hero-main-text {
@@ -45,19 +54,26 @@ header {
 .hero-sub-text {
     color: #e5e7eb;
     font-size: 18px;
+    padding-bottom: 8px;
 }
 
 .signup-btn {
     background: #3882f6;
     color: #e5e7eb;
     border: 3px solid #3882f6;
-    border-radius: 6%;
+    border-radius: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 900;
 }
 
 .information-div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 48px;
 }
 
 .information-text {
@@ -65,35 +81,40 @@ header {
     font-size: 36px;
     font-weight: 900;
     text-align: center;
+    padding-bottom: 48px;
 }
 
 .img-box-div {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    
+    gap: 48px;    
 }
 
 .img-box {
     border: 3px solid #3882f6;
     border-radius: 10%;
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 150px;
 }
 
 .img-col1, .img-col2, .img-col3, .img-col4 {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .img-subtext {
-    width: 125px;
+    width: 150px;
     text-align: center;
+    padding-top: 4px;
+    padding-bottom: 48px;
 }
 
 .quote-section {
     background: #e5e7eb;
+    padding-left: 132px;
+    padding-right: 132px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .quote-text {
@@ -105,16 +126,18 @@ header {
 .quote-citation {
     text-align: right;
     font-weight: 900;
+    padding-right: 48px;
 }
 
 .call-to-action {
     background: #3882f6;
     color: #e5e7eb;
-    margin: 75px;
-    padding: 40px;
-    border-radius: 2%;
+    margin: 132px;
+    padding: 48px;
+    border-radius: 8px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .cta-left {
@@ -139,11 +162,17 @@ header {
     background: #3882f6;
     color: #e5e7eb;
     border: 2px solid #e5e7eb;
-    border-radius: 6%;
+    border-radius: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 900;    
 }
 
 footer {
-
+    margin-top: auto;
+    padding: 48px;
 }
 
 footer .copyright {

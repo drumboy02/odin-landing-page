@@ -97,6 +97,10 @@ header {
     width: 150px;
 }
 
+.img-box img {
+    border-radius: 8.5%;
+}
+
 .img-col1, .img-col2, .img-col3, .img-col4 {
     display: flex;
     flex-direction: column;
